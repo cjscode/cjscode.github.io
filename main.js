@@ -4,7 +4,7 @@ xml.onload = async function () {
     let n = []
     let lnk = []
     for (let i = 0; i < r.length; i++) {
-        if (!(r[i]["archived"]) && !(r[i]["name"] == "cjscode")) {
+        if (!(r[i]["archived"]) && !(r[i]["name"] == "cjscode") && !(r[i]["name"] == "cjscode.github.io")) {
             let c = document.createElement("div")
             c.id = r[i]["id"]
             c.classList.add("pj")
